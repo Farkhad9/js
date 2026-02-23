@@ -33,6 +33,33 @@
 
 // console.log(admin)
 
-const age = 25
-console.log(age)
+// const age = 25
+// console.log(age)
 
+//------------------------------ UROK 3---------------------------------------------
+
+const greeting = 'Привет'
+const name = "Александр"
+const goodbyeMessage = 'До свидания'
+const message = `${greeting}, ${name}! ${goodbyeMessage}`
+console.log(message)
+
+
+const a = 5
+const b = 12
+const sum = `summa cisel a i b ravna ${a+b}`
+console.log(sum)
+
+const age = 25
+const ischild = age < 18
+console.log(ischild)
+
+
+const num =111
+const str = '222'
+const resukt = num + str
+console.log(resukt) // Результат будет '111222', так как при сложении числа и строки число преобразуется в строку.
+console.log(typeof resukt) // Результат будет 'string', так как результат сложения - это строка.
+
+console.log (typeof('14' / '13' ) 
+)
