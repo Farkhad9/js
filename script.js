@@ -63,3 +63,35 @@ console.log(typeof resukt) // Результат будет 'string', так к�
 
 console.log (typeof('14' / '13' ) 
 )
+
+
+let number = 10;
+
+if (number > 0) {
+    console.log("Число положительное");
+} else {
+    console.log("Число отрицательное или равно нулю");
+}
+
+
+let score = 75;
+
+if (score >= 90) {
+    console.log("Отлично");
+} else if (score >= 70) {
+    console.log("Хорошо");
+} else if (score >= 50) {
+    console.log("Удовлетворительно");
+} else {
+    console.log("Не сдал");
+}
+
+
+let num = 8;
+
+if (num % 2 === 0) {
+    console.log("Чётное число");
+} else {
+    console.log("Нечётное число");
+}
+
