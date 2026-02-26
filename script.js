@@ -1,4 +1,4 @@
-    // console.log('Привет, мир!')
+// console.log('Привет, мир!')
 // console.log('Привет, мир!')
 // let message = 'Привет'
 // console.log(message)
@@ -79,7 +79,7 @@ var number = "123"
 console.log(typeof number)
 
 
-let numbers = [22,44,55,6,62]
+let numbers = [22, 44, 55, 6, 62]
 // numbers.push(100)
 // numbers.pop()
 // numbers.shift()
@@ -87,7 +87,7 @@ numbers.unshift(100)
 console.log(numbers)
 
 <<<<<<< HEAD
-console.log (typeof('14' / '13' ) 
+console.log(typeof ('14' / '13')
 )
 
 
@@ -120,3 +120,61 @@ if (num % 2 === 0) {
 } else {
     console.log("Нечётное число");
 }
+
+const person = {
+    name: "Alice",
+    age: 25,
+    city: "New York"
+};
+
+const car = {
+    brand: "Toyota",
+    speed: 0,
+
+    accelerate(amount) {
+        this.speed += amount;
+        console.log(`Speed: ${this.speed} km/h`);
+    },
+
+    brake(amount) {
+        this.speed -= amount;
+        console.log(`Speed: ${this.speed} km/h`);
+    }
+};
+
+function Animal(name, sound) {
+    this.name = name;
+    this.sound = sound;
+
+    this.speak = function () {
+        console.log(`${this.name} says ${this.sound}!`);
+    };
+}
+
+const dog = new Animal("Dog", "Woof");
+dog.speak();
+
+class Rectangle {
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    area() {
+        return this.width * this.height;
+    }
+
+    perimeter() {
+        return 2 * (this.width + this.height);
+    }
+}
+
+const rect = new Rectangle(10, 5);
+console.log(rect.area());
+console.log(rect.perimeter());
+
+const greet = (name) => `Hello, ${name}!`;
+console.log(greet("Bob"));
+
+const { name, age } = person;
+console.log(name, age);
