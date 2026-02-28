@@ -178,3 +178,51 @@ console.log(greet("Bob"));
 
 const { name, age } = person;
 console.log(name, age);
+
+
+let BankAccount = {
+  owner: "Farkhad",
+  balance: 1000,
+
+  deposit(amount) {
+    this.balance += amount;
+    console.log("Пополнение на " + amount);
+  },
+
+  withdraw(amount) {
+    if (amount <= this.balance) {
+      this.balance -= amount;
+      console.log("Снятие " + amount);
+    } else {
+      console.log("Недостаточно средств");
+    }
+  },
+
+  checkBalance() {
+    console.log("Баланс: " + this.balance);
+  }
+};
+
+
+function BankAccount(owner, balance) {
+  this.owner = owner;
+  this.balance = balance;
+
+  this.deposit = function(amount) {
+    this.balance += amount;
+  };
+
+  this.withdraw = function(amount) {
+    if (amount <= this.balance) {
+      this.balance -= amount;
+    }
+  };
+}
+
+let acc1 = new BankAccount("Ali", 2000);
+let acc2 = new BankAccount("Murad", 500);
+
+acc1.deposit(300);
+console.log(acc1.balance);
+
+
