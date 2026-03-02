@@ -75,106 +75,107 @@
 
 
 
-var number = "123"
-console.log(typeof number)
+// var number = "123"
+// console.log(typeof number)
 
 
-let numbers = [22, 44, 55, 6, 62]
-// numbers.push(100)
-// numbers.pop()
-// numbers.shift()
-numbers.unshift(100)
-console.log(numbers)
+// let numbers = [22, 44, 55, 6, 62]
+// // numbers.push(100)
+// // numbers.pop()
+// // numbers.shift()
+// numbers.unshift(100)
+// console.log(numbers)
 
-<<<<<<< HEAD
-console.log(typeof ('14' / '13')
-)
-
-
-let number = 10;
-
-if (number > 0) {
-    console.log("Число положительное");
-} else {
-    console.log("Число отрицательное или равно нулю");
-}
+// <<<<<<< HEAD
+// console.log(typeof ('14' / '13')
+// )
 
 
-let score = 75;
+// let number = 10;
 
-if (score >= 90) {
-    console.log("Отлично");
-} else if (score >= 70) {
-    console.log("Хорошо");
-} else if (score >= 50) {
-    console.log("Удовлетворительно");
-} else {
-    console.log("Не сдал");
-}
+// if (number > 0) {
+//     console.log("Число положительное");
+// } else {
+//     console.log("Число отрицательное или равно нулю");
+// }
 
 
-let num = 8;
+// let score = 75;
 
-if (num % 2 === 0) {
-    console.log("Чётное число");
-} else {
-    console.log("Нечётное число");
-}
+// if (score >= 90) {
+//     console.log("Отлично");
+// } else if (score >= 70) {
+//     console.log("Хорошо");
+// } else if (score >= 50) {
+//     console.log("Удовлетворительно");
+// } else {
+//     console.log("Не сдал");
+// }
 
-const person = {
-    name: "Alice",
-    age: 25,
-    city: "New York"
-};
 
-const car = {
-    brand: "Toyota",
-    speed: 0,
+// let num = 8;
 
-    accelerate(amount) {
-        this.speed += amount;
-        console.log(`Speed: ${this.speed} km/h`);
-    },
+// if (num % 2 === 0) {
+//     console.log("Чётное число");
+// } else {
+//     console.log("Нечётное число");
+// }
 
-    brake(amount) {
-        this.speed -= amount;
-        console.log(`Speed: ${this.speed} km/h`);
-    }
-};
+// const person = {
+//     name: "Alice",
+//     age: 25,
+//     city: "New York"
+// };
 
-function Animal(name, sound) {
-    this.name = name;
-    this.sound = sound;
+// const car = {
+//     brand: "Toyota",
+//     speed: 0,
 
-    this.speak = function () {
-        console.log(`${this.name} says ${this.sound}!`);
-    };
-}
+//     accelerate(amount) {
+//         this.speed += amount;
+//         console.log(`Speed: ${this.speed} km/h`);
+//     },
 
-const dog = new Animal("Dog", "Woof");
-dog.speak();
+//     brake(amount) {
+//         this.speed -= amount;
+//         console.log(`Speed: ${this.speed} km/h`);
+//     }
+// };
 
-class Rectangle {
-    constructor(width, height) {
-        this.width = width;
-        this.height = height;
-    }
+// function Animal(name, sound) {
+//     this.name = name;
+//     this.sound = sound;
 
-    area() {
-        return this.width * this.height;
-    }
+//     this.speak = function () {
+//         console.log(`${this.name} says ${this.sound}!`);
+//     };
+// }
 
-    perimeter() {
-        return 2 * (this.width + this.height);
-    }
-}
+// const dog = new Animal("Dog", "Woof");
+// dog.speak();
 
-const rect = new Rectangle(10, 5);
-console.log(rect.area());
-console.log(rect.perimeter());
+// class Rectangle {
+//     constructor(width, height) {
+//         this.width = width;
+//         this.height = height;
+//     }
 
-const greet = (name) => `Hello, ${name}!`;
-console.log(greet("Bob"));
+//     area() {
+//         return this.width * this.height;
+//     }
+
+//     perimeter() {
+//         return 2 * (this.width + this.height);
+//     }
+// }
+
+// const rect = new Rectangle(10, 5);
+// console.log(rect.area());
+// console.log(rect.perimeter());
+
+// const greet = (name) => `Hello, ${name}!`;
+// console.log(greet("Bob"));
+
 
 const { name, age } = person;
 console.log(name, age);
@@ -226,3 +227,43 @@ acc1.deposit(300);
 console.log(acc1.balance);
 
 
+// const { name, age } = person;
+// console.log(name, age);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ===============================================
+
+
+
+document.getElementById("box");        
+document.querySelector(".text");         
+document.querySelectorAll(".text");       
+document.getElementsByClassName("text"); 
+document.getElementsByTagName("p");      
+
+
+
+const para = document.getElementById("para");
+para.style.color = "red";
+para.style.fontSize = "24px";
+para.style.backgroundColor = "yellow";
+
+document.getElementById("title").textContent = "New Title";  
+document.getElementById("box").innerHTML = "<b>Bold Text</b>"; 
